@@ -1,4 +1,4 @@
-FROM python:3.11.0-alpine3.16
+FROM python:3.11.3-alpine3.16
 
 RUN /sbin/apk add --no-cache libxml2 libxslt zlib
 RUN /usr/sbin/adduser -g python -D python
