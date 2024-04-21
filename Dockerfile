@@ -1,7 +1,11 @@
-FROM python:3.11.3-alpine3.16
+FROM python:3.11-slim
 
-RUN /sbin/apk add --no-cache libxml2 libxslt zlib
-RUN /usr/sbin/adduser -g python -D python
+RUN /usr/sbin/adduser --create-home --shell /bin/bash --user-group python
+
+ARG DEBIAN_FRONTEND=noninteractive
+RUN /usr/bin/apt-get update \
+ && /usr/bin/apt-get install --assume-yes libxml2 libxslt1.1 zlib1g \
+ && rm -rf /var/lib/apt/lists/*
 
 USER python
 RUN /usr/local/bin/python -m venv /home/python/venv
