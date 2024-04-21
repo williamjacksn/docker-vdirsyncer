@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 
-RUN /usr/sbin/adduser --create-home --shell /bin/bash --user-group python
+RUN /usr/sbin/useradd --create-home --shell /bin/bash --user-group python
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN /usr/bin/apt-get update \
