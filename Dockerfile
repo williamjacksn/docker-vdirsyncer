@@ -22,4 +22,4 @@ ENTRYPOINT ["/home/python/venv/bin/vdirsyncer"]
 
 LABEL org.opencontainers.image.authors="William Jackson <william@subtlecoolness.com>" \
       org.opencontainers.image.source="https://github.com/williamjacksn/docker-vdirsyncer" \
-      org.opencontainers.image.version="2024.2"
+      org.opencontainers.image.version="2024.3"
