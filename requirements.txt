@@ -42,7 +42,7 @@ multidict==6.0.5
     #   yarl
 oauthlib==3.2.2
     # via aiohttp-oauthlib
-requests==2.31.0
+requests==2.32.2
     # via
     #   requests-toolbelt
     #   vdirsyncer
