@@ -48,7 +48,7 @@ requests==2.32.3
     #   vdirsyncer
 requests-toolbelt==1.0.0
     # via vdirsyncer
-urllib3==2.2.1
+urllib3==2.2.2
     # via requests
 vdirsyncer==0.19.2
     # via -r requirements.in
