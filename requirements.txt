@@ -20,7 +20,7 @@ atomicwrites==1.4.1
     # via vdirsyncer
 attrs==24.2.0
     # via aiohttp
-certifi==2024.7.4
+certifi==2024.8.30
     # via requests
 charset-normalizer==3.3.2
     # via requests
