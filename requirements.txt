@@ -54,5 +54,5 @@ urllib3==2.2.2
     # via requests
 vdirsyncer==0.19.2
     # via -r requirements.in
-yarl==1.9.7
+yarl==1.9.8
     # via aiohttp
