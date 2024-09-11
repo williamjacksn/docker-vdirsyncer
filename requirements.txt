@@ -45,14 +45,10 @@ multidict==6.1.0
 oauthlib==3.2.2
     # via aiohttp-oauthlib
 requests==2.32.3
-    # via
-    #   requests-toolbelt
-    #   vdirsyncer
-requests-toolbelt==1.0.0
     # via vdirsyncer
 urllib3==2.2.2
     # via requests
-vdirsyncer==0.19.2
+vdirsyncer==0.19.3
     # via -r requirements.in
 yarl==1.11.1
     # via aiohttp
