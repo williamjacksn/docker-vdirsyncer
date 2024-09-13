@@ -46,7 +46,7 @@ oauthlib==3.2.2
     # via aiohttp-oauthlib
 requests==2.32.3
     # via vdirsyncer
-urllib3==2.2.2
+urllib3==2.2.3
     # via requests
 vdirsyncer==0.19.3
     # via -r requirements.in
