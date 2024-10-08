@@ -44,11 +44,13 @@ multidict==6.1.0
     #   yarl
 oauthlib==3.2.2
     # via aiohttp-oauthlib
+propcache==0.2.0
+    # via yarl
 requests==2.32.3
     # via vdirsyncer
 urllib3==2.2.3
     # via requests
 vdirsyncer==0.19.3
     # via -r requirements.in
-yarl==1.13.1
+yarl==1.14.0
     # via aiohttp
