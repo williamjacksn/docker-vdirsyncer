@@ -6,7 +6,7 @@
 #
 aiohappyeyeballs==2.4.3
     # via aiohttp
-aiohttp==3.10.10
+aiohttp==3.11.0
     # via
     #   aiohttp-oauthlib
     #   vdirsyncer
@@ -45,7 +45,9 @@ multidict==6.1.0
 oauthlib==3.2.2
     # via aiohttp-oauthlib
 propcache==0.2.0
-    # via yarl
+    # via
+    #   aiohttp
+    #   yarl
 requests==2.32.3
     # via vdirsyncer
 urllib3==2.2.3
