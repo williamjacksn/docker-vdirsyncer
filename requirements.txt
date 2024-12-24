@@ -22,7 +22,7 @@ attrs==24.3.0
     # via aiohttp
 certifi==2024.12.14
     # via requests
-charset-normalizer==3.4.0
+charset-normalizer==3.4.1
     # via requests
 click==8.1.7
     # via
