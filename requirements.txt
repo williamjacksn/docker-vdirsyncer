@@ -30,7 +30,7 @@ click==8.1.8
     #   vdirsyncer
 click-log==0.4.0
     # via vdirsyncer
-frozenlist==1.5.0
+frozenlist==1.6.0
     # via
     #   aiohttp
     #   aiosignal
