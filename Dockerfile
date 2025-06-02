@@ -1,24 +1,23 @@
-FROM python:3.11-slim
-
-RUN /usr/sbin/useradd --create-home --shell /bin/bash --user-group python
+FROM ghcr.io/astral-sh/uv:0.7.9-bookworm-slim
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN /usr/bin/apt-get update \
  && /usr/bin/apt-get install --assume-yes libxml2 libxslt1.1 zlib1g \
  && rm -rf /var/lib/apt/lists/*
 
+RUN /usr/sbin/useradd --create-home --shell /bin/bash --user-group python
 USER python
-RUN /usr/local/bin/python -m venv /home/python/venv
 
-COPY --chown=python:python requirements.txt /home/python/docker-vdirsyncer/requirements.txt
-RUN /home/python/venv/bin/pip install --no-cache-dir --requirement /home/python/docker-vdirsyncer/requirements.txt
+WORKDIR /app
+COPY --chown=python:python .python-version pyproject.toml uv.lock ./
+RUN /usr/local/bin/uv sync --frozen
 
-ENV PATH="/home/python/venv/bin:${PATH}" \
+ENV PATH="/app/.venv/bin:${PATH}" \
     PYTHONDONTWRITEBYTECODE="1" \
     PYTHONUNBUFFERED="1" \
     TZ="Etc/UTC"
 
-ENTRYPOINT ["/home/python/venv/bin/vdirsyncer"]
+ENTRYPOINT ["/app/.venv/bin/vdirsyncer"]
 
 LABEL org.opencontainers.image.authors="William Jackson <william@subtlecoolness.com>" \
       org.opencontainers.image.source="https://github.com/williamjacksn/docker-vdirsyncer" \

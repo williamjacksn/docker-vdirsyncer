@@ -1,9 +1,8 @@
 services:
   shell:
     entrypoint:
-      - /bin/sh
+      - /bin/bash
     image: ghcr.io/williamjacksn/vdirsyncer
     init: true
     volumes:
-      - ./:/home/python/docker-vdirsyncer
-    working_dir: /home/python/docker-vdirsyncer
+      - ./:/app
