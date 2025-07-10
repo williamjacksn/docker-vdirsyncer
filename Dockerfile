@@ -1,4 +1,4 @@
-FROM ghcr.io/astral-sh/uv:0.7.19-bookworm-slim
+FROM ghcr.io/astral-sh/uv:0.7.20-bookworm-slim
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN /usr/bin/apt-get update \
