@@ -1,5 +1,5 @@
 version = 1
-revision = 2
+revision = 3
 requires-python = ">=3.11"
 
 [[package]]
@@ -112,12 +112,6 @@ sdist = { url = "https://files.pythonhosted.org/packages/9f/92/e10c6232f2e2e21a2
 wheels = [
     { url = "https://files.pythonhosted.org/packages/4a/29/d94dc724b543d0ff16e177a3ce4eaa6253afb6350aa7ba372a8fe7e01f20/aiostream-0.4.5-py3-none-any.whl", hash = "sha256:25b7c2d9c83570d78c0ef5a20e949b7d0b8ea3b0b0a4f22c49d3f721105a6057", size = 35632, upload-time = "2022-08-30T13:10:52.844Z" },
 ]
-
-[[package]]
-name = "atomicwrites"
-version = "1.4.1"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/87/c6/53da25344e3e3a9c01095a89f16dbcda021c609ddb42dd6d7c0528236fb2/atomicwrites-1.4.1.tar.gz", hash = "sha256:81b2c9071a49367a7f770170e5eec8cb66567cfbbc8c73d20ce5ca4a8d71cf11", size = 14227, upload-time = "2022-07-08T18:31:40.459Z" }
 
 [[package]]
 name = "attrs"
@@ -504,19 +498,18 @@ wheels = [
 
 [[package]]
 name = "vdirsyncer"
-version = "0.19.3"
+version = "0.20.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
     { name = "aiostream" },
-    { name = "atomicwrites" },
     { name = "click" },
     { name = "click-log" },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ee/c2/50eb6b430f447c062ae3cd07d1a354d768bdb1443580bd4ae16ec8c8296d/vdirsyncer-0.19.3.tar.gz", hash = "sha256:e437851feb985dec3544654f8f9cf6dd109b0b03f7e19956086603092ffeb28f", size = 125478, upload-time = "2024-09-11T15:27:03.688Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2e/f6/94ed82de371cc80784ffe90e0dac8ce9f5d272c01d614415a5e800ffb303/vdirsyncer-0.20.0.tar.gz", hash = "sha256:feb1a533500a95c14fd155733a1056fe359192553d82c07c6ba04fcbfc40b12d", size = 126633, upload-time = "2025-08-28T20:57:44.555Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/36/88/b1e26f8ec9e64822c5c276c3c900780862fc170da237a16a33ab507bc95b/vdirsyncer-0.19.3-py3-none-any.whl", hash = "sha256:8ce92864365ee668478a8cdfe4170c55536dcd8e552c8bf750a94eefb9dd720e", size = 61061, upload-time = "2024-09-11T15:27:01.977Z" },
+    { url = "https://files.pythonhosted.org/packages/60/64/ba1083f60274f91f2d54190a134dada95fb22fa8e4b44d318efe9463fa45/vdirsyncer-0.20.0-py3-none-any.whl", hash = "sha256:8c7cc702a5617973c79070f9c4900f4ea6bf844e7eaf5e5b029cbfb04e3e92bf", size = 61423, upload-time = "2025-08-28T20:57:43.074Z" },
 ]
 
 [[package]]
